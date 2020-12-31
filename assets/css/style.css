@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+body {
+    position: relative; 
+}
+/*Navbar*/
+#sidebar{
+    background-color:#e3e3e3;
+    border-bottom: none;
+}
+
+.navbar .container .navbar-brand{
+    font-size: 40px;
+    font-weight: bold;
+    color:#39603d;
+}
+
+.navbar .navbar-nav .nav-item .nav-link{
+    font-size: 25px;
+    font-weight: bold;
+    color: #39603d;
+    
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    color:#3c403d;
+}
+.navbar .container .navbar-brand:hover{
+    color:#3c403d;
+}
+#floatright{
+    float: right;
+}
+.showcase{
+    height: 80vh; 
+    text-align: center ; 
+    padding-top: 15rem;
+    background-color: #f6f6f6;
+}
+.showcase h1{
+    color: #3c403d;
+    font-size: 100px;
+}
+/*End of Showcase*/
+.content{  
+    color:#3c403d;
+    text-align: center ;  
+    background-color: #f6f6f6;      
+}
+.profile{
+    position: static;
+    padding-top: 100px;
+    width:80%;
+    margin: auto;
+}
+.profile h1{
+    font-weight: bold;
+}
+.myprofile{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.myprofile img{
+    width: 350px;
+    height: 400px;
+    float: left;
+}
+.myprofile table{
+    overflow-y: hidden;
+    text-align: left;
+    width: 60%;
+    float: right;
+    color: white;
+    background-color:#c60021;
+}
+
+/*End of myprofile*/
+.skills{
+    position: relative;
+    padding-top: 100px;
+    width:80%;
+    height: 80vh;
+    margin: auto;
+}
+.skills h1{
+    font-weight: bold;
+}
+.skillcontent{
+    padding-top: 20px;
+    
+}
+.skillcontent table{
+    padding-top: 10px;
+    color: white;
+    background-color:#c60021;
+    overflow-y: hidden
+}
+/*End of Skills*/
+/*Projects*/
+.project{
+    height: 90vh;
+    text-align: left;
+    padding-top: 60px;
+    width:80%;    
+    margin: auto;
+}
+.project h1{
+    font-weight: bold;
+}
+/*footer*/
+footer{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+/*Responsiveness*/
+@media screen and (max-width: 700px) {
+    .showcase{
+        padding-top: 7rem;
+        text-align: center; 
+    }
+    .showcase h1{
+        font-size: 70px;
+    }
+    .profile{
+        padding-top: 20px;
+        width: 100%;
+    }
+    .myprofile{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .myprofile img{
+        width: 350px;
+        height: 400px;
+        align-items: center;
+    }
+    .myprofile table{
+        margin-top: 20px;
+    }
+    .skills{
+        padding-top: 10rem;
+        width: 100%;
+    }
+    .project{
+        text-align: left;
+        padding-top: 10px;
+        width:100%;
+        height: 100%;
+    }
+}
+  @media screen and (max-width: 360px) {
+        .showcase{
+        padding-top: 7rem;
+        text-align: center; 
+    }
+    .showcase h1{
+        font-size: 70px;
+    }
+    .profile{
+        padding-top: 20px;
+        width: 100%;
+    }
+    .myprofile{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .myprofile img{
+        width: 350px;
+        height: 400px;
+        align-items: center;
+    }
+    .myprofile table{
+        margin-top: 20px;
+        width: 85%;
+        overflow-y: hidden
+
+    }
+    .skills{
+        padding-top: 20rem;
+        width: 100%;
+    }
+    .skillcontent table{
+        width: 100%;
+    }
+    .project{
+        padding-top: 20rem;
+    }
+  }
